@@ -21,8 +21,13 @@ class LogInScreen extends StatelessWidget {
             ),
             SizedBox(
               width: double.infinity,
-              child: FilledButton(
-                onPressed: () {},
+              child: ElevatedButton(
+                onPressed: () {
+                  GoRouter.of(context).go("/log-in");
+                },
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(double.infinity, 50),
+                ),
                 child: Text("Log In"),
               ),
             ),
